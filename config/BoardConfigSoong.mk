@@ -11,8 +11,7 @@ EXPORT_TO_SOONG := \
     KERNEL_MAKE_FLAGS \
     PATH_OVERRIDE_SOONG \
     TARGET_KERNEL_CONFIG \
-    TARGET_KERNEL_SOURCE \
-    TARGET_KERNEL_CLANG_PATH
+    TARGET_KERNEL_SOURCE
 
 # Setup SOONG_CONFIG_* vars to export the vars listed above.
 # Documentation here:
@@ -29,7 +28,6 @@ SOONG_CONFIG_lineageGlobalVars += \
     sdmcore_has_is_display_hw_available_func \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
-    gralloc_handle_has_ubwcp_format \
     target_surfaceflinger_udfps_lib \
     target_init_vendor_lib \
     camera_needs_client_info_defaults \
